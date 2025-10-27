@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼익THK 솔루션사업부문 회사소개서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .page-content {
+            display: none; /* Pages are hidden by default */
+        }
+        /* Simple arrow style */
+        .arrow {
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 8px solid #6b7280; /* gray-500 */
+        }
+        .long-arrow::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 40px; /* Adjust length as needed */
+            height: 2px;
+            background-color: #6b7280; /* gray-500 */
+            transform: translateY(-50%);
+        }
+        .long-arrow-end::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 8px solid #6b7280; /* gray-500 */
+             transform: translateY(-50%);
+             margin-left: 40px; /* Should match arrow line width */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white shadow-md fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home-page">
+                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/main/SAMICKTHK-CI-en.png" alt="SAMICKTHK Logo" class="h-8">
+            </a>
+            <div class="hidden md:flex space-x-4">
+                <a href="#introduction-page" class="text-gray-600 hover:text-blue-600">회사소개</a>
+                <a href="#robotics-page" class="text-gray-600 hover:text-blue-600">Robotics</a>
+                <a href="#thk-page" class="text-gray-600 hover:text-blue-600">THK</a>
+                <a href="#dxlink-page" class="text-gray-600 hover:text-blue-600">DX Link</a>
+                <a href="#autonomy-page" class="text-gray-600 hover:text-blue-600">Autonomy</a>
+                <a href="#qfit-page" class="text-gray-600 hover:text-blue-600">Q Fit</a>
+                <a href="#system-page" class="text-gray-600 hover:text-blue-600">SYSTEM</a>
+                <a href="#autonomous-page" class="text-gray-600 hover:text-blue-600">Autonomous</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#introduction-page" class="block py-2 px-4 text-sm hover:bg-gray-200">회사소개</a>
+            <a href="#robotics-page" class="block py-2 px-4 text-sm hover:bg-gray-200">Robotics</a>
+            <a href="#thk-page" class="block py-2 px-4 text-sm hover:bg-gray-200">THK</a>
+            <a href="#dxlink-page" class="block py-2 px-4 text-sm hover:bg-gray-200">DX Link</a>
+            <a href="#autonomy-page" class="block py-2 px-4 text-sm hover:bg-gray-200">Autonomy</a>
+            <a href="#qfit-page" class="block py-2 px-4 text-sm hover:bg-gray-200">Q Fit</a>
+            <a href="#system-page" class="block py-2 px-4 text-sm hover:bg-gray-200">SYSTEM</a>
+            <a href="#autonomous-page" class="block py-2 px-4 text-sm hover:bg-gray-200">Autonomous</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="pt-16">
+        <!-- Home Page / Main Visual -->
+        <section id="home-page" class="page-content">
+            <div class="min-h-screen bg-white flex items-center justify-center p-6">
+                <div class="container mx-auto">
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+                        <!-- Left Text Content -->
+                        <div class="text-center md:text-left md:w-5/12 lg:w-4/12">
+                            <h1 class="text-5xl lg:text-7xl font-bold text-gray-800 leading-tight">
+                                The Standard
+                                <br>
+                                Solution
+                            </h1>
+                            <p class="mt-4 text-xl lg:text-2xl text-gray-600">
+                                산업의 표준을 제시하다
+                            </p>
+                        </div>
+                        <!-- Right Image Content -->
+                        <div class="w-full md:w-7/12 lg:w-6/12 relative">
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/main/main-diagram.png" alt="Samick THK Solution Diagram" class="w-full h-auto drop-shadow-2xl">
+                            
+                            <!-- Clickable Overlays -->
+                            <!-- SYSTEM -->
+                            <a href="#system-page" class="absolute cursor-pointer" style="top: 8%; left: 14%; width: 28%; height: 18%;"></a>
+                            <!-- ROBOTICS -->
+                            <a href="#robotics-page" class="absolute cursor-pointer" style="top: 8%; right: 8%; width: 32%; height: 18%;"></a>
+                            <!-- AUTONOMY -->
+                            <a href="#autonomy-page" class="absolute cursor-pointer" style="top: 41%; left: 1%; width: 28%; height: 18%;"></a>
+                            <!-- THK -->
+                            <a href="#thk-page" class="absolute cursor-pointer" style="top: 41%; right: 1%; width: 28%; height: 18%;"></a>
+                            <!-- Q FIT -->
+                            <a href="#qfit-page" class="absolute cursor-pointer" style="bottom: 8%; left: 8%; width: 30%; height: 18%;"></a>
+                            <!-- DX LINK -->
+                            <a href="#dxlink-page" class="absolute cursor-pointer" style="bottom: 8%; right: 8%; width: 30%; height: 18%;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 회사소개 Page -->
+        <section id="introduction-page" class="page-content py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-bold text-gray-800">Company Introduction</h2>
+                    <p class="text-xl text-gray-500 mt-2">Providing Innovative Products To The World And Generating New Trends</p>
+                </div>
+
+                <!-- 기업 개요 -->
+                <div class="mb-20">
+                    <h3 class="text-3xl font-bold text-blue-800 mb-10 text-center">기업 개요 <span class="text-lg font-normal text-gray-500">(2024년 기준)</span></h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center mb-12">
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"><p class="text-lg text-gray-600 mb-2">총자산</p><p class="text-3xl font-bold text-blue-600">4,636 억원</p></div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"><p class="text-lg text-gray-600 mb-2">자본금</p><p class="text-3xl font-bold text-blue-600">105 억원</p></div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"><p class="text-lg text-gray-600 mb-2">매출액</p><p class="text-3xl font-bold text-blue-600">3,044 억원</p></div>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"><p class="text-lg text-gray-600 mb-2">종업원수</p><p class="text-3xl font-bold text-blue-600">705 명</p></div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                        <div class="bg-blue-50 p-8 rounded-lg shadow-xl space-y-3">
+                            <div class="flex"><strong class="text-blue-700 w-24 inline-block flex-shrink-0">회사창업일</strong><span>1960년 5월 10일</span></div>
+                            <div class="flex"><strong class="text-blue-700 w-24 inline-block flex-shrink-0">본점소재지</strong><span>대구광역시 달서구 성서동로 163 (월암동)</span></div>
+                            <div class="flex"><strong class="text-blue-700 w-24 inline-block flex-shrink-0">대표이사</strong><span>진영환</span></div>
+                            <div class="flex"><strong class="text-blue-700 w-24 inline-block flex-shrink-0">주요사업</strong><span>스마트팩토리사업, 모션사업</span></div>
+                            <div class="flex"><strong class="text-blue-700 w-24 inline-block flex-shrink-0">계열사</strong><span>삼익키리우㈜, 삼익정공㈜, 삼익HDS㈜, 삼익SDT㈜, 삼익ADM㈜</span></div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/factory-headofficeview.png" alt="본사 전경" class="rounded-lg shadow-md w-full h-full object-cover">
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/factory-ptview.png" alt="평택 공장" class="rounded-lg shadow-md w-full h-full object-cover">
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/factory-tpview.png" alt="대구 공장" class="rounded-lg shadow-md w-full h-full object-cover">
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/factory-headofficeview1.png" alt="본사 전경 2" class="rounded-lg shadow-md w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 비즈니스 네트워크 & 전국 영업망 -->
+                <div class="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-16 items-stretch">
+                    <!-- 비즈니스 네트워크 -->
+                    <div class="flex flex-col">
+                        <h3 class="text-3xl font-bold text-blue-800 mb-8 text-center lg:text-left">비즈니스 네트워크</h3>
+                        <div class="mb-6">
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/factory-worldmap.png" alt="세계 지도" class="w-full h-auto">
+                        </div>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div>
+                                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/businessnetwork-america.jpg" alt="미국 지사" class="rounded-lg shadow-md w-full mb-2 aspect-[4/3] object-cover">
+                                <p class="font-bold text-base">미국</p>
+                                <p class="text-sm text-gray-600 truncate">MATZ AMERICA, LLC</p>
+                            </div>
+                            <div>
+                                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/businessnetwork-poland.jpg" alt="폴란드 지사" class="rounded-lg shadow-md w-full mb-2 aspect-[4/3] object-cover">
+                                <p class="font-bold text-base">폴란드</p>
+                                <p class="text-sm text-gray-600 truncate">MATZ POLAND sp. z o.o.</p>
+                            </div>
+                            <div>
+                                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/businessnetwork-china.jpg" alt="중국 지사" class="rounded-lg shadow-md w-full mb-2 aspect-[4/3] object-cover">
+                                <p class="font-bold text-base">중국</p>
+                                <p class="text-sm text-gray-600 truncate" title="마츠(난징)자동화장치유한공사">마츠(난징)자동화장치유한공사</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 전국 영업망 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col h-full">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4 text-center">전국 영업망</h3>
+                        <div class="flex-grow flex items-center justify-center min-h-0">
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/factory-koreamap.png" alt="전국 영업망 지도" class="w-3/4 h-auto object-contain">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 연혁 -->
+                <div class="mb-20">
+                    <h3 class="text-3xl font-bold text-blue-800 mb-16 text-center">연혁</h3>
+
+                    <!-- Timeline Container -->
+                    <div class="space-y-20">
+
+                        <!-- First Row -->
+                        <div class="relative px-4">
+                            <!-- Timeline line -->
+                            <div class="absolute top-3 left-0 w-full h-1 bg-gray-200"></div>
+                            
+                            <!-- Timeline items grid -->
+                            <div class="relative grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-x-6 gap-y-12">
+                                <!-- 1960 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">1960</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">㈜삼익공업사 창업</p><div class="mt-2 h-28 w-full flex items-center justify-center"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/history-industrialhistory.jpg" alt="1960" class="max-w-full max-h-full rounded-lg shadow-md object-cover"></div></div>
+                                <!-- 1965 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">1965</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">㈜삼익줄 설립</p><div class="mt-2 h-28 w-full"></div></div>
+                                <!-- 1974 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">1974</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">삼익통운 출시</p><div class="mt-2 h-28 w-full"></div></div>
+                                <!-- 1983 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">1983</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">삼익공업㈜ 상호변경<br>일본THK 협업 시작</p><div class="mt-2 h-28 w-full"></div></div>
+                                <!-- 1987 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">1987</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">삼익정공㈜ 설립</p><div class="mt-2 h-28 w-full"></div></div>
+                                <!-- 1991 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">1991</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">일본THK 합작 및<br>기술도입 계약 체결<br>LM Guide 공장 준공</p><div class="mt-2 h-28 w-full flex items-center justify-center"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/history-lmguide.png" alt="1991" class="max-w-full max-h-full rounded-lg shadow-md object-contain bg-white p-1"></div></div>
+                                <!-- 1999 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">1999</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">삼익SDT㈜ 설립</p><div class="mt-2 h-28 w-full"></div></div>
+                                <!-- 2003 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">2003</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">삼익HDS㈜ 설립</p><div class="mt-2 h-28 w-full"></div></div>
+                            </div>
+                        </div>
+
+                        <!-- Second Row -->
+                        <div class="relative px-4">
+                            <!-- Timeline line -->
+                            <div class="absolute top-3 left-0 w-full h-1 bg-gray-200"></div>
+                            
+                            <!-- Timeline items grid -->
+                            <div class="relative grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-x-6 gap-y-12">
+                                <!-- 2005 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">2005</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">로봇 사업 시작<br>LTR 생산</p><div class="mt-2 h-28 w-full flex items-center justify-center"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/history-itr.jpg" alt="2005" class="max-w-full max-h-full rounded-lg shadow-md object-cover"></div></div>
+                                <!-- 2006 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">2006</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">삼익THK㈜<br>상호 변경</p><div class="mt-2 h-28 w-full"></div></div>
+                                <!-- 2011 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">2011</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">볼나사<br>국내생산 시작</p><div class="mt-2 h-28 w-full flex items-center justify-center"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/history-ballscrew.png" alt="2011" class="max-w-full max-h-full rounded-lg shadow-md object-contain bg-white p-1"></div></div>
+                                <!-- 2014 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">2014</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">다관절로봇 개발<br>삼성전자 업무협약</p><div class="mt-2 h-28 w-full flex items-center justify-center"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/history-robot.png" alt="2014" class="max-w-full max-h-full rounded-lg shadow-md object-contain bg-white p-1"></div></div>
+                                <!-- 2019 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">2019</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">평택 공장 준공<br>S전자 ITR & WTR<br>기술 및 사업 이관</p><div class="mt-2 h-28 w-full flex items-center justify-center"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/history-ptview.jpg" alt="2019" class="max-w-full max-h-full rounded-lg shadow-md object-cover"></div></div>
+                                <!-- 2022 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">2022</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">삼익 매츠벤처스㈜<br>설립</p><div class="mt-2 h-28 w-full"></div></div>
+                                <!-- 2024 -->
+                                <div class="text-center flex flex-col items-center"><div class="w-6 h-6 bg-white border-2 border-blue-600 rounded-full z-10 relative mb-4"></div><p class="font-bold text-lg">2024</p><p class="mt-1 text-xs text-gray-600 h-16 flex items-center justify-center">솔루션사업부문<br>통합</p><div class="mt-2 h-28 w-full flex items-center justify-center gap-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/history-ur.png" alt="2024-1" class="max-w-[48%] max-h-full rounded-lg shadow-md object-contain bg-white p-1"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/history-mir.png" alt="2024-2" class="max-w-[48%] max-h-full rounded-lg shadow-md object-contain bg-white p-1"></div></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 조직도 -->
+                <div class="mb-20">
+                    <h3 class="text-3xl font-bold text-blue-800 mb-12 text-center">조직도</h3>
+                    <div class="text-center">
+                        <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/organization-chart.png" alt="조직도" class="mx-auto w-full max-w-6xl rounded-lg">
+                    </div>
+                </div>
+
+
+                 <!-- Our Mission -->
+                <div class="mt-20">
+                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-gray-800 text-white p-12 rounded-lg">
+                        <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/company-profile/factory-ptview.png" class="w-full h-auto rounded-lg shadow-md">
+                        <div>
+                            <h3 class="text-4xl font-bold mb-4">Our Mission</h3>
+                            <p class="text-2xl mb-6">"자율화를 통해 많은 사람들에게 자유를 제공한다"</p>
+                            <p class="mb-4">2005년 로봇사업을 시작으로, 2019년에 로봇과 시스템 분야를 평택으로 통합 이전하여 운영하고 있습니다. Robots, System, Data 기술을 통해 고객에게 기능·품질, 경제적 이익, 경험을 넘어 지속적인 의미를 제공하며 궁극적으로 Autonomous를 실현합니다.</p>
+                            <div class="mt-6 border-t border-gray-600 pt-6">
+                                 <h4 class="text-xl font-bold">평택 WORKS</h4>
+                                 <p>사업장 총면적: 25,188 m²</p>
+                                 <p>클린룸: 9,000m² | 일반 조립동: 1,800m²</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Robotics Page -->
+        <section id="robotics-page" class="page-content py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-bold text-red-600">Robotics</h2>
+                    <p class="text-xl text-gray-500 mt-2">The Standard Solution, 산업의 표준을 제시하다</p>
+                </div>
+
+                <!-- Transfer Robot -->
+                <div class="mb-20">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-2">Transfer Robot</h3>
+                    <p class="text-gray-600 mb-12 max-w-3xl mx-auto text-center">삼익의 LM시스템 및 정밀 감속기를 적용하여 설계, 제조한 TR시리즈는 20년 이상의 반도체 및 FPD 판매 경험을 통해 높은 신뢰성을 보유하고 있습니다.</p>
+                    
+                    <!-- WTR (Wafer) Section -->
+                    <div class="mb-16">
+                        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                            <!-- WTR Description -->
+                            <div class="lg:col-span-1">
+                                <h4 class="text-2xl font-bold text-red-700">WTR (Wafer)</h4>
+                                <ul class="mt-4 list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                    <li>고강성 프레임 구조</li>
+                                    <li>주요부품의 자체 생산 및 기술력 보유</li>
+                                    <li>CE 인증 제어기</li>
+                                    <li>커스터마이징 설계, 제작</li>
+                                </ul>
+                            </div>
+                            <!-- WTR Models -->
+                            <div class="lg:col-span-4 grid grid-cols-2 md:grid-cols-4 gap-6 items-start">
+                                <!-- WTR-S -->
+                                <div class="text-center">
+                                    <p id="open-wtr-s-modal" class="font-bold mb-2 text-sm cursor-pointer transition-colors hover:text-red-600">WTR-S (4자유도)</p>
+                                    <div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-wtr-s.png" class="max-h-full max-w-full"></div>
+                                    <p class="text-xs text-gray-600">Slim&Link 구조<br>1~5매 Wafer 핸들링 가능</p>
+                                </div>
+                                <!-- WTR-U -->
+                                <div class="text-center"><p class="font-bold mb-2 text-sm">WTR-U (5자유도)</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-wtr-u.png" class="max-h-full max-w-full"></div><p class="text-xs text-gray-600">Dual Hand 구동<br>Vacuum, Edge Grip Type 지원</p></div>
+                                <!-- WTR-C -->
+                                <div class="text-center"><p class="font-bold mb-2 text-sm">WTR-C (4,5자유도)</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-wtr-c.png" class="max-h-full max-w-full"></div><p class="text-xs text-gray-600">Compact Type<br>Single or Dual Hand 적용</p></div>
+                                <!-- SRC-5C -->
+                                <div class="text-center"><p class="font-bold mb-2 text-sm">SRC-5C</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-src-5c.png" class="max-h-full max-w-full object-contain"></div><p class="text-xs text-gray-600">실시간 다중 제어 지원<br>AVS (Active Vibration Suppressor)<br>LVD 인증보유(CE,KCS,UL)</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ITR (FPD) Section -->
+                    <div>
+                        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                            <!-- ITR Description -->
+                            <div class="lg:col-span-1">
+                                <h4 class="text-2xl font-bold text-red-700">ITR (FPD)</h4>
+                                <ul class="mt-4 list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                    <li>주요부품의 자체 생산 및 기술력 보유</li>
+                                    <li>1급 클린룸 환경 준수</li>
+                                    <li>CE, UL 인증 제어기</li>
+                                    <li>커스터마이징 설계, 제작</li>
+                                </ul>
+                            </div>
+                            <!-- ITR Models -->
+                            <div class="lg:col-span-4 grid grid-cols-2 md:grid-cols-4 gap-6 items-start">
+                                <!-- ITR-S/P -->
+                                <div class="text-center"><p class="font-bold mb-2 text-sm">ITR-S/P (FPD용)</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-itr-sp.png" class="max-h-full max-w-full"></div><p class="text-xs text-gray-600">Single Post 타입의 AC 서보 모터를 채용,<br>6G~8.6G GLASS 대응 가능</p></div>
+                                <!-- ITR-C -->
+                                <div class="text-center"><p class="font-bold mb-2 text-sm">ITR-C 450Z, 700Z</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-itr-c.png" class="max-h-full max-w-full"></div><p class="text-xs text-gray-600">Cylindrical 타입 AC 서보 모터 채용,<br>2G~4G GLASS(PLP 등) 이송 및 적재</p></div>
+                                <!-- ITR-VS -->
+                                <div class="text-center"><p class="font-bold mb-2 text-sm">ITR-VS</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-itr-vs.png" class="max-h-full max-w-full"></div><p class="text-xs text-gray-600">20kg 부하 진공 로봇</p></div>
+                                <!-- SRC-5L -->
+                                <div class="text-center"><p class="font-bold mb-2 text-sm">SRC-5L</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-src-5l.png" class="max-h-full max-w-full object-contain"></div><p class="text-xs text-gray-600">고유량 로봇 전용 제어기<br>AVS (Active Vibration Suppressor)<br>LVD 인증보유(CE,KCS)</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 다관절/스카라 로봇 -->
+                <div class="mb-20">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-2">다관절 / 스카라</h3>
+                    <p class="text-gray-600 mb-12 max-w-4xl mx-auto text-center">THK는 자체 개발 다관절 로봇을 보유하고 있으며 글로벌 기업인 EPSON과의 제휴로 고속, 고정밀, 저진동에 특화된 소형전문 산업용 로봇을 제공합니다.</p>
+                    
+                    <!-- 다관절 Section -->
+                    <div class="mb-16 p-6 border rounded-lg">
+                        <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
+                            <!-- 다관절 Description -->
+                            <div class="lg:col-span-1 my-auto">
+                                <h4 class="text-2xl font-bold text-red-700 mb-4">다관절</h4>
+                                <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                    <li>컴팩트 디자인</li>
+                                    <li>경량/컴팩트한 로봇 암 구조</li>
+                                    <li>고정밀, 고강도, 저진동 진동</li>
+                                    <li>GYROPLUS 기술 적용 (C, N Series)</li>
+                                </ul>
+                            </div>
+                            <!-- 다관절 Models -->
+                            <div class="lg:col-span-5 grid grid-cols-2 md:grid-cols-4 gap-6 items-start">
+                                <!-- C-Series -->
+                                <div class="text-center"><p class="font-bold mb-2">C-Series</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-epson-cseries.png" class="max-h-full max-w-full object-contain"></div><div class="text-xs space-y-1 mt-2"><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>작업반경(mm)</span><span class="font-bold">600-1,400</span></div><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>가반하중(kg)</span><span class="font-bold">4-12</span></div></div><p class="text-xs text-gray-600 mt-2 h-16">미세 벤딩에 가장 적합한 슬림한 암으로 뛰어난 속도 및 정밀도 실현</p></div>
+                                <!-- N-Series -->
+                                <div class="text-center"><p class="font-bold mb-2">N-Series</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-epson-nseries.png" class="max-h-full max-w-full object-contain"></div><div class="text-xs space-y-1 mt-2"><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>작업반경(mm)</span><span class="font-bold">450-1,000</span></div><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>가반하중(kg)</span><span class="font-bold">2.5-6</span></div></div><p class="text-xs text-gray-600 mt-2 h-16">세계 최초 폴딩 암 구조의 6축 로봇</p></div>
+                                <!-- VT-Series -->
+                                <div class="text-center"><p class="font-bold mb-2">VT-Series</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-vtseries.png" class="max-h-full max-w-full object-contain"></div><div class="text-xs space-y-1 mt-2"><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>작업반경(mm)</span><span class="font-bold">920</span></div><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>가반하중(kg)</span><span class="font-bold">6</span></div></div><p class="text-xs text-gray-600 mt-2 h-16">컨트롤러 내장형 6축 로봇</p></div>
+                                <!-- SAMICK 다관절 -->
+                                <div class="text-center"><p class="font-bold mb-2">SAMICK 다관절</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-samick-multijointrobot.png" class="max-h-full max-w-full object-contain"></div><div class="text-xs space-y-1 mt-2"><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>작업반경(mm)</span><span class="font-bold">700,900</span></div><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>가반하중(kg)</span><span class="font-bold">5,7</span></div></div><p class="text-xs text-gray-600 mt-2 h-16">Compact Type 고정도 Type</p></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 스카라 Section -->
+                    <div class="p-6 border rounded-lg">
+                        <div class="grid grid-cols-1 lg:grid-cols-6 gap-8">
+                            <!-- 스카라 Description -->
+                            <div class="lg:col-span-1 my-auto">
+                                <h4 class="text-2xl font-bold text-red-700 mb-4">스카라</h4>
+                                <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm">
+                                    <li>전세계 판매 1위</li>
+                                    <li>폭넓은 제품 라인업</li>
+                                    <li>고속, 고정밀</li>
+                                    <li>GYROPLUS 기술 적용 (GX, LS-B Series)</li>
+                                </ul>
+                            </div>
+                            <!-- 스카라 Models -->
+                            <div class="lg:col-span-5 grid grid-cols-2 md:grid-cols-4 gap-6 items-start">
+                                <!-- GX-Series -->
+                                <div class="text-center"><p class="font-bold mb-2">GX-Series</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-gxseries.png" class="max-h-full max-w-full object-contain"></div><div class="text-xs space-y-1 mt-2"><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>작업반경(mm)</span><span class="font-bold">250-1,000</span></div><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>가반하중(kg)</span><span class="font-bold">4-20</span></div></div><p class="text-xs text-gray-600 mt-2 h-16">G 시리즈 대비 한층 업그레이드된 하이엔드 스카라</p></div>
+                                <!-- G-Series -->
+                                <div class="text-center"><p class="font-bold mb-2">G-Series</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-gseries.png" class="max-h-full max-w-full object-contain"></div><div class="text-xs space-y-1 mt-2"><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>작업반경(mm)</span><span class="font-bold">175-1,000</span></div><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>가반하중(kg)</span><span class="font-bold">1-20</span></div></div><p class="text-xs text-gray-600 mt-2 h-16">고강성 본체와 소형 부품의 정밀 조립에 가장 적합한 성능을 컴팩트하게 실현</p></div>
+                                <!-- LS-Series -->
+                                <div class="text-center"><p class="font-bold mb-2">LS-Series</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-epson-lsseries.png" class="max-h-full max-w-full object-contain"></div><div class="text-xs space-y-1 mt-2"><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>작업반경(mm)</span><span class="font-bold">400-1,000</span></div><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>가반하중(kg)</span><span class="font-bold">3-20</span></div></div><p class="text-xs text-gray-600 mt-2 h-16">신뢰할 수 있는 기본 성능과 실적을 자랑하는 표준 타입의 스카라</p></div>
+                                <!-- T-Series -->
+                                <div class="text-center"><p class="font-bold mb-2">T-Series</p><div class="bg-white p-2 rounded-lg shadow h-32 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-epson-tseries.png" class="max-h-full max-w-full object-contain"></div><div class="text-xs space-y-1 mt-2"><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>작업반경(mm)</span><span class="font-bold">400,600</span></div><div class="bg-red-100 border border-red-200 rounded px-2 py-1 flex justify-between"><span>가반하중(kg)</span><span class="font-bold">3,6</span></div></div><p class="text-xs text-gray-600 mt-2 h-16">컨트롤러가 내장된 공간절약형 All-in-one 스카라</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cobot -->
+                <div class="mb-20">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-12 text-center">Cobot</h3>
+                    
+                    <!-- Cobot Models -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-x-4 gap-y-8 mb-16 text-center">
+                        <!-- UR3e -->
+                        <div class="flex flex-col items-center">
+                            <p class="font-bold">UR3e</p>
+                            <div class="relative inline-block my-2"><span class="bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded-full">500mm</span></div>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-ur3e.png" alt="UR3e" class="h-32 object-contain">
+                            <p class="text-xs text-gray-600 mt-2">작업 공간이 협소한 경우 적합, 경량 조립 및 나사 조립 등의 작업</p>
+                        </div>
+                        <!-- UR5e -->
+                        <div class="flex flex-col items-center">
+                            <p class="font-bold">UR5e</p>
+                            <div class="relative inline-block my-2"><span class="bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded-full">850mm</span></div>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-ur5e.png" alt="UR5e" class="h-32 object-contain">
+                            <p class="text-xs text-gray-600 mt-2">머신텐딩 및 조립과 같은 작업에 이상적</p>
+                        </div>
+                        <!-- UR10e -->
+                        <div class="flex flex-col items-center">
+                            <p class="font-bold">UR10e</p>
+                            <div class="relative inline-block my-2"><span class="bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded-full">1300mm</span></div>
+                            <img src="httpsaws://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-ur10e.png" alt="UR10e" class="h-32 object-contain">
+                            <p class="text-xs text-gray-600 mt-2">가반하중 12.5kg 머신텐딩, 팔레타이징, 포장 등 다양한 어플케이션</p>
+                        </div>
+                        <!-- UR15 -->
+                        <div class="flex flex-col items-center">
+                            <p class="font-bold">UR15</p>
+                            <div class="relative inline-block my-2"><span class="bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded-full">1300mm</span></div>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-ur15.png" alt="UR15" class="h-32 object-contain">
+                            <p class="text-xs text-gray-600 mt-2">머신텐딩, 포장, 자재 제거, 나사 및 너트 체결 등 고하중 작업에 적합</p>
+                        </div>
+                        <!-- UR16e -->
+                        <div class="flex flex-col items-center">
+                            <p class="font-bold">UR16e</p>
+                            <div class="relative inline-block my-2"><span class="bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded-full">900mm</span></div>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-ur16e.png" alt="UR16e" class="h-32 object-contain">
+                            <p class="text-xs text-gray-600 mt-2">머신텐딩, 포장, 자재 제거, 나사 및 너트 체결 등 고하중 작업에 적합</p>
+                        </div>
+                        <!-- UR20 -->
+                        <div class="flex flex-col items-center">
+                            <p class="font-bold">UR20</p>
+                            <div class="relative inline-block my-2"><span class="bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded-full">1750mm</span></div>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-ur20.png" alt="UR20" class="h-32 object-contain">
+                            <p class="text-xs text-gray-600 mt-2">Z축으로의 가반하중 25kg, UR 차세대 로봇</p>
+                        </div>
+                        <!-- UR30 -->
+                        <div class="flex flex-col items-center">
+                            <p class="font-bold">UR30</p>
+                            <div class="relative inline-block my-2"><span class="bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded-full">1300mm</span></div>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-ur30.png" alt="UR30" class="h-32 object-contain">
+                             <p class="text-xs text-gray-600 mt-2">Z축으로의 가반하중 35kg 사용 가능</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Cobot Applications -->
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-center bg-white p-6 rounded-lg shadow">
+                        <div class="md:col-span-1">
+                             <h4 class="text-xl font-bold text-gray-800 mb-4">Universal Robot</h4>
+                             <ul class="space-y-2">
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>높은 생산성</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>빠른 설치</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>높은 안정성</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>누구나 쉽게 프로그래밍 가능</li>
+                             </ul>
+                        </div>
+                        <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-3 gap-8">
+                            <div class="text-center">
+                                <p class="font-bold mb-2">팔레타이징</p>
+                                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-palletizing.png" alt="팔레타이징" class="rounded-lg shadow-md w-full">
+                            </div>
+                            <div class="text-center">
+                                <p class="font-bold mb-2">스크류 드라이빙</p>
+                                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-screwdriving.png" alt="스크류 드라이빙" class="rounded-lg shadow-md w-full">
+                            </div>
+                            <div class="text-center">
+                                <p class="font-bold mb-2">머신텐딩</p>
+                                <img src="https...//kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-machinetending.png" alt="머신텐딩" class="rounded-lg shadow-md w-full">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End Effector -->
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-2">End Effector</h3>
+                    <p class="text-gray-600 mb-12">Robots+ 는 전동, 공압 그리퍼, 비전 등의 다양한 엔드이펙터를 활용하여 고객의 요구에 맞는 커스터마이징 제품 서비스를 제공합니다.</p>
+
+                    <div class="space-y-10">
+                        <!-- Vision -->
+                        <div>
+                            <div class="flex items-center mb-4">
+                                <span class="bg-pink-500 text-white font-bold py-1 px-5 rounded-full">Vision</span>
+                                <div class="flex-grow h-px bg-pink-200 ml-4"></div>
+                            </div>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 pl-8">
+                                <div class="text-center">
+                                    <div class="bg-white p-2 rounded-lg shadow h-24 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-endeffector-pickit-sd2.png" alt="Pickit SD2" class="max-h-full max-w-full"></div>
+                                    <p class="text-sm font-semibold">Pickit SD2</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="bg-white p-2 rounded-lg shadow h-24 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-endeffector-pickit-hd2.png" alt="Pickit M,L-HD2" class="max-h-full max-w-full"></div>
+                                    <p class="text-sm font-semibold">Pickit M,L-HD2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gripper -->
+                        <div>
+                            <div class="flex items-center mb-4">
+                                <span class="bg-pink-500 text-white font-bold py-1 px-5 rounded-full">Gripper</span>
+                                <div class="flex-grow h-px bg-pink-200 ml-4"></div>
+                            </div>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 pl-8">
+                                <div class="text-center">
+                                    <div class="bg-white p-2 rounded-lg shadow h-24 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-endeffector-smc.png" alt="SMC Magnet Gripper" class="max-h-full max-w-full"></div>
+                                    <p class="text-sm font-semibold">SMC Magnet Gripper</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="bg-white p-2 rounded-lg shadow h-24 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-endeffector-robotiq-hande.png" alt="Robotiq Hand-E" class="max-h-full max-w-full"></div>
+                                    <p class="text-sm font-semibold">Robotiq Hand-E</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="bg-white p-2 rounded-lg shadow h-24 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-endeffector-robotiq-epick.png" alt="Robotiq E-PICK" class="max-h-full max-w-full"></div>
+                                    <p class="text-sm font-semibold">Robotiq E-PICK</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="bg-white p-2 rounded-lg shadow h-24 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-endeffector-robotiq-2f85.png" alt="Robotiq 2F-85" class="max-h-full max-w-full"></div>
+                                    <p class="text-sm font-semibold">Robotiq 2F-85</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hand -->
+                        <div>
+                            <div class="flex items-center mb-4">
+                                <span class="bg-pink-500 text-white font-bold py-1 px-5 rounded-full">Hand</span>
+                                <div class="flex-grow h-px bg-pink-200 ml-4"></div>
+                            </div>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 pl-8">
+                                <div class="text-center">
+                                    <div class="bg-white p-2 rounded-lg shadow h-24 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-endeffector-vacuumhand1.png" alt="Vacuum(ceramic)" class="max-h-full max-w-full"></div>
+                                    <p class="text-sm font-semibold">Vacuum(ceramic)</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="bg-white p-2 rounded-lg shadow h-24 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-endeffector-5fixhand.png" alt="5 Fix hand" class="max-h-full max-w-full"></div>
+                                    <p class="text-sm font-semibold">5 Fix hand</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="bg-white p-2 rounded-lg shadow h-24 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-endeffector-vacuumhand1.png" alt="Vacuum Hand -1" class="max-h-full max-w-full transform -scale-x-100"></div>
+                                    <p class="text-sm font-semibold">Vacuum Hand -1</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="bg-white p-2 rounded-lg shadow h-24 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-endeffector-fliphand.png" alt="Flip Hand" class="max-h-full max-w-full"></div>
+                                    <p class="text-sm font-semibold">Flip Hand</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="bg-white p-2 rounded-lg shadow h-24 flex items-center justify-center mb-2"><img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/robotics/robotics-endeffector-edgegrip.png" alt="Edge Grip" class="max-h-full max-w-full"></div>
+                                    <p class="text-sm font-semibold">Edge Grip</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- THK Page -->
+        <section id="thk-page" class="page-content py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-bold text-orange-500">THK</h2>
+                    <p class="text-xl text-gray-500 mt-2">정밀함과 효율성을 극대화하는 THK 기술</p>
+                </div>
+        
+                <!-- Pick & Place Robot (PPR) -->
+                <div class="mb-20">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-8">Pick & Place Robot (PPR)</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                        <div class="flex items-center justify-center">
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/thk/thk-ppr.png" alt="THK PPR" class="rounded-lg shadow-lg max-w-md w-full">
+                        </div>
+                        <div>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/thk/thk-ppr-testmotion.png" alt="PPR Test Motion" class="rounded-lg shadow-md mb-6 w-full">
+                            <div class="pl-4">
+                                <p class="text-lg text-gray-700 mb-3">THK PPR은 소형화되는 콘덴서, 렌즈, 글라스 등 깨지기 쉬운 대상물에 대한 충격 최소화 Solution을 제공하고 있습니다.</p>
+                                <p class="text-lg text-gray-700">정밀한 제어로 0.15N 컨텍, 워크충격량 0.3N, 분해능 0.01N 컨트롤이 가능합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- LMS (Versatile Transport System) -->
+                <div class="mb-20">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-8">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4 md:mb-0">LMS (Versatile Transport System)</h3>
+                        <p class="text-gray-600 max-w-xl md:text-right">THK의 차세대 리니어 반송 시스템은 Module 단위로 설계되어, 고객의 자동차 부품, 전자 부품 등의 조립 검사공정 효율화를 실현합니다.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                        <!-- Top Left: 자유로운 레이아웃 -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg overflow-hidden">
+                            <h4 class="text-2xl font-bold text-orange-600 mb-2">자유로운 레이아웃</h4>
+                            <p class="mb-6 text-gray-600">모듈을 조합하여 수직 혹은 수평 순환 반송 레이아웃을 구축</p>
+                            
+                            <div class="relative min-h-[250px] flex items-center justify-center mt-12 md:mt-4">
+                                <!-- Main Image with overlays -->
+                                <div class="relative w-10/12 ml-auto">
+                                    <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/thk/thk-vts.png" alt="LMS 레이아웃" class="w-full rounded-md">
+
+                                    <!-- Text Overlay: 이후 증설 가능 -->
+                                    <div class="absolute flex items-center bg-gray-50/90 rounded-md px-2 py-1.5 shadow-md" style="top: 0; right: 50%; transform: translate(50%, -50%);">
+                                        <div class="w-7 h-7 rounded bg-orange-500 text-white flex items-center justify-center mr-2 flex-shrink-0">
+                                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                                        </div>
+                                        <span class="font-semibold text-sm whitespace-nowrap">이후 증설 가능</span>
+                                    </div>
+                                    
+                                    <!-- Text Overlay: 재조합 가능 -->
+                                    <div class="absolute flex items-center bg-gray-50/90 rounded-md px-2 py-1.5 shadow-md" style="top: 50%; right: 0; transform: translate(50%, -50%);">
+                                        <div class="w-7 h-7 rounded bg-orange-500 text-white flex items-center justify-center mr-2 flex-shrink-0">
+                                           <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0011.667 0l3.181-3.183m-4.991-2.69a8.25 8.25 0 00-11.667 0l-3.181 3.183" />
+                                            </svg>
+                                        </div>
+                                        <span class="font-semibold text-sm whitespace-nowrap">재조합 가능</span>
+                                    </div>
+                                </div>
+
+                                <!-- Module Image Bubble -->
+                                <div class="absolute top-1/2 left-0 transform -translate-y-1/2 w-32 h-32 md:w-40 md:h-40">
+                                    <div class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-3 rotate-45 w-6 h-6 bg-orange-200 z-0"></div>
+                                    <div class="relative w-full h-full bg-orange-200 rounded-full flex items-center justify-center p-3 shadow-lg z-10">
+                                         <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/thk/thk-vts-module.png" alt="LMS 모듈" class="w-full h-auto object-contain">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Top Right: 연결 및 자동 급유 독자기술 -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg">
+                            <h4 class="text-2xl font-bold text-orange-600 mb-4">연결 및 자동 급유 독자기술</h4>
+                            <p class="mb-4 text-gray-600">모듈 측 LM레일에 특수 부품을 탑재하여 이송 시 슬라이더로 자동 급유</p>
+                            <div class="space-y-6">
+                                <div>
+                                    <p class="mb-2 font-semibold">LM레일 사이를 연결하는 스페이서 부품</p>
+                                    <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/thk/thk-vts-autorefueling.jpg" alt="LMS 자동 급유 1" class="w-full rounded-md border">
+                                    <p class="mt-2 text-sm text-gray-500">LM레일 사이를 접촉하지 않고 연결</p>
+                                </div>
+                                <div>
+                                    <p class="mb-2 font-semibold">오일을 함유하여 LM블록에 그리스 자동 급유</p>
+                                    <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/thk/thk-vts-lmautorefueling.jpg" alt="LMS 자동 급유 2" class="w-full rounded-md border">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Bottom Left: 높은 생산성 -->
+                        <div class="bg-orange-50 p-6 rounded-lg shadow-lg">
+                            <h4 class="text-xl font-bold text-orange-700 mb-4">높은 생산성</h4>
+                            <ul class="list-disc list-inside mb-4 space-y-2 text-gray-700">
+                                <li>고강성 LM가이드를 사용하여 슬라이더 위에서 직접 작업</li>
+                                <li>허용 레이디얼 하중 최대 3000N</li>
+                            </ul>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/thk/thk-vts-productivity.jpg" alt="LMS 높은 생산성" class="w-full rounded-md border">
+                        </div>
+
+                        <!-- Bottom Middle: 다품종 -->
+                        <div class="bg-orange-50 p-6 rounded-lg shadow-lg">
+                            <h4 class="text-xl font-bold text-orange-700 mb-4">다품종</h4>
+                            <ul class="list-disc list-inside mb-4 space-y-2 text-gray-700">
+                                <li>스토퍼가 필요 없는 고정도 위치 결정</li>
+                                <li>정지 위치 조정 기간</li>
+                                <li>분기 및 병렬화로 유연한 레이아웃</li>
+                            </ul>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/thk/thk-vts-variousitems.png" alt="LMS 다품종" class="w-full rounded-md border">
+                        </div>
+
+                        <!-- Bottom Right: 증설 및 재사용 -->
+                        <div class="bg-orange-50 p-6 rounded-lg shadow-lg">
+                            <h4 class="text-xl font-bold text-orange-700 mb-4">증설 및 재사용</h4>
+                            <ul class="list-disc list-inside mb-4 space-y-2 text-gray-700">
+                                <li>필요한 길이만큼 추후 증설 가능</li>
+                                <li>다른 구동 방식으로 전환 가능</li>
+                                <li>반복 설치가 쉬운 독자적인 메커니즘</li>
+                            </ul>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/thk/thk-vts-expantion.png" alt="LMS 증설 및 재사용" class="w-full rounded-md border">
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- THK Endeffector -->
+                <div>
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4 md:mb-0">THK Endeffector</h3>
+                        <p class="text-gray-600 max-w-md md:text-right">THK사의 다양한 엔드이펙터를 활용하여 고객의 요구에 맞는 커스터마이징 제품 서비스를 제공합니다.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-8">
+                        <!-- TNH -->
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-[#F79462] text-white font-bold py-2 px-10 rounded-md">TNH</div>
+                            <div class="h-10 w-px border-l-2 border-dotted border-orange-300 my-4"></div>
+                            <p class="font-semibold text-gray-700 text-lg mb-4">형상기억 흡착 핸드</p>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/thk/thk-tnh.png" alt="형상기억 흡착 핸드" class="h-48 object-contain">
+                        </div>
+                        <!-- EG -->
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-[#F79462] text-white font-bold py-2 px-10 rounded-md">EG</div>
+                            <div class="h-10 w-px border-l-2 border-dotted border-orange-300 my-4"></div>
+                            <p class="font-semibold text-gray-700 text-lg mb-4">전동 그리퍼</p>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/thk/thk-gripper.png" alt="전동 그리퍼" class="h-48 object-contain">
+                        </div>
+                        <!-- PRS -->
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-[#F79462] text-white font-bold py-2 px-10 rounded-md">PRS</div>
+                            <div class="h-10 w-px border-l-2 border-dotted border-orange-300 my-4"></div>
+                            <p class="font-semibold text-gray-700 text-lg mb-4">휴머노이드 그리퍼</p>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/thk/thk-humanoid.png" alt="휴머노이드 그리퍼" class="h-48 object-contain">
+                        </div>
+                        <!-- NEXTAGE -->
+                        <div class="flex flex-col items-center text-center">
+                            <div class="bg-[#F79462] text-white font-bold py-2 px-10 rounded-md">NEXTAGE</div>
+                            <div class="h-10 w-px border-l-2 border-dotted border-orange-300 my-4"></div>
+                            <p class="font-semibold text-gray-700 text-lg mb-4">듀얼암 로봇</p>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/thk/thk-dualarm-robot.png" alt="듀얼암 로봇" class="h-48 object-contain">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- DX Link Page -->
+       <section id="dxlink-page" class="page-content py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-bold text-yellow-500">DX Link</h2>
+                    <p class="text-xl text-gray-500 mt-2">데이터로 연결되는 스마트 제조의 미래</p>
+                </div>
+
+                <!-- AI DX -->
+                <div class="mb-20">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-8">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4 md:mb-0">AI DX</h3>
+                        <p class="text-gray-600 max-w-xl md:text-right text-base break-keep">
+                            기존 생산 제품의 데이터 수집 및 보고 시스템을 한 단계 발전시켜, AI 기반 기술을 활용한 실시간 데이터 mining, analyzing, optimizing을 통한 고객 UI를 제공합니다. 이를 통해 생산 과정의 신뢰성과 데이터 접근성을 향상시키고 보다 정밀하고 체계적인 관리가 가능하도록 지원합니다.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-xl">
+                        <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/dx-link/dx-ai-dx.png" alt="AI DX Diagram" class="w-full h-auto">
+                    </div>
+                </div>
+
+                <!-- AI Vision System -->
+                <div class="mb-20">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-8">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4 md:mb-0">AI Vision System <span class="text-2xl text-gray-500 font-normal">Digital Twin</span></h3>
+                        <p class="text-gray-600 max-w-xl md:text-right text-base break-keep">AI 비전 시스템 기술은 이미지와 영상을 분석 및 처리하며, AI기반 기술을 통해 데이터 기반 의사 결정, 실시간 모니터링, 데이터 분석, 시뮬레이션, 예지보전 기술을 제공합니다.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-xl">
+                         <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/dx-link/dx-aivision.png" alt="AI Vision System Diagram" class="w-full h-auto">
+                    </div>
+                </div>
+                
+                <!-- AI 공정 장비 관리 -->
+                <div>
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-8">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4 md:mb-0">AI 공정 장비 관리 <span class="text-2xl text-gray-500 font-normal">THK OMNIedge</span></h3>
+                         <p class="text-gray-600 max-w-xl md:text-right text-base break-keep">THK의 독자적인 Sensing 기술로 기계 요소 부품의 상태를 수치화할 수 있는 'OMNIedge' 는 누적되는 데이터를 AI기반 검사를 통하여 설비의 상태를 예지 보전합니다.</p>
+                    </div>
+                     <div class="bg-white p-8 rounded-lg shadow-xl">
+                         <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/dx-link/dx-omniedge.png" alt="OMNIedge System Diagram" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Autonomy Page -->
+        <section id="autonomy-page" class="page-content py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-16">
+                    <h2 class="text-5xl font-bold text-green-600">Autonomy</h2>
+                    <p class="text-xl text-gray-500 mt-2">혁신을 이끄는 차세대 자율화 솔루션</p>
+                </div>
+
+                <!-- AMR(ACS) -->
+                <div class="mb-20">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-8">
+                         <h3 class="text-3xl font-bold text-gray-800 mb-4 md:mb-0">AMR(ACS) <br><span class="text-2xl text-gray-500 font-normal">Autonomous Mobile Robot</span></h3>
+                         <p class="text-gray-600 max-w-xl md:text-right text-base break-keep">삼익THK는 글로벌 기업인 Teradyne Robotics와 제휴하여 고속주행, 높은 안전성, 호환성, 확장성이 확보된 AMR을 제공 하고 있습니다.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-lg shadow-xl">
+                        <div class="grid grid-cols-12 gap-8">
+                            <!-- Left Section -->
+                            <div class="col-span-12 md:col-span-3">
+                                <h4 class="text-2xl font-bold text-gray-800 mb-4">MiR</h4>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                    <li>3중 다중 센서 안전 시스템 보장</li>
+                                    <li>정교한 계획 알고리즘을 활용하여 주행</li>
+                                    <li>자체 운영 S/W 기본 탑재</li>
+                                    <li>모바일 자율주행 로봇</li>
+                                </ul>
+                            </div>
+                            <!-- Right Section -->
+                            <div class="col-span-12 md:col-span-9">
+                                <!-- Top Row -->
+                                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12 text-center">
+                                    <div>
+                                        <h5 class="font-bold text-lg mb-2">MIR250</h5>
+                                        <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomy/autonomy-mir250.png" alt="MIR250" class="w-full h-auto rounded-lg mb-2">
+                                        <p class="text-sm text-gray-600">초속 2m/s, 소형 모델로 80cm 좁은공간 주행 가능</p>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-lg mb-2">MIR600</h5>
+                                        <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomy/autonomy-mir600.png" alt="MIR600" class="w-full h-auto rounded-lg mb-2">
+                                        <p class="text-sm text-gray-600">초속 2m/s, 자율적으로 팔레트 픽업, 운반 및 배송</p>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-lg mb-2">MIR1350</h5>
+                                        <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomy/autonomy-mir1350.png" alt="MIR1350" class="w-full h-auto rounded-lg mb-2">
+                                        <p class="text-sm text-gray-600">고하중 및 팔레트 운송을 자동화하는 더 탁월한 성능을 발휘</p>
+                                    </div>
+                                </div>
+                                <div class="border-t pt-10">
+                                    <!-- Bottom Row -->
+                                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center items-start">
+                                        <div>
+                                            <h5 class="font-bold text-lg mb-2">MIR Pallet Lift</h5>
+                                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomy/autonomy-mirpalletjack.png" alt="MIR Pallet Lift" class="w-full h-auto rounded-lg mb-2">
+                                            <p class="text-sm text-gray-600">팔레트 랙 없이 다양한 크기의 화물을 유연하게 운반</p>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold text-lg mb-2">MIR Shelf Carrier</h5>
+                                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomy/autonomy-mirshelfcarrier.png" alt="MIR Shelf Carrier" class="w-full h-auto rounded-lg mb-2">
+                                            <p class="text-sm text-gray-600">MiR250 장착가능한 표준모듈 쉘프를 효율적으로 운반</p>
+                                        </div>
+                                        <div>
+                                            <h5 class="font-bold text-lg mb-2">MIR Hook</h5>
+                                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomy/autonomy-mirhook.png" alt="MIR Hook" class="w-full h-auto rounded-lg mb-2">
+                                            <p class="text-sm text-gray-600">크기에 상관없이 마커를 이용해 카트를 식별 및 운반 작업 가능</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Manipulator -->
+                <div class="mb-20">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-8">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4 md:mb-0">Mobile Manipulator <br><span class="text-2xl text-gray-500 font-normal">(MOMA)</span></h3>
+                         <p class="text-gray-600 max-w-xl md:text-right text-base break-keep">자율주행로봇(Mobile Robot)과 협동로봇(Manipulator)을 결합하여 다양한 작업 환경과 요구 사항에 ‘유연하게 적용할 수 있는’ 솔루션을 제공합니다.</p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div class="flex items-center justify-center">
+                             <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomy/autonomy-moma.png" alt="Mobile Manipulator" class="rounded-lg shadow-lg max-w-xl w-full">
+                        </div>
+                        <div class="space-y-6">
+                             <div class="bg-white rounded-lg shadow-lg">
+                                 <h4 class="text-center font-bold text-lg bg-blue-100 text-blue-800 py-2 rounded-t-lg">MOMA 기본구성</h4>
+                                 <div class="grid grid-cols-2 gap-x-6 gap-y-3 p-4 text-sm">
+                                     <div class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Autonomous Mobile Robot</div>
+                                     <div class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Manipulator(Robot)</div>
+                                     <div class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Middleware</div>
+                                     <div class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Remote IO</div>
+                                     <div class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Vision System</div>
+                                     <div class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Motor, Sensor, Wifi, PIO</div>
+                                 </div>
+                             </div>
+                              <div class="bg-white rounded-lg shadow-lg">
+                                 <h4 class="text-center font-bold text-lg bg-blue-100 text-blue-800 py-2 rounded-t-lg">MOMA 기능</h4>
+                                <div class="p-4">
+                                     <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                        <li>맞춤형 Tool, 다양한 공정 적용</li>
+                                        <li>Manipulator의 자유로운 Action 수행</li>
+                                        <li>일체화된 Middleware 통합제어</li>
+                                        <li>AMR의 자유로운 작업 영역 확보</li>
+                                        <li>높은 유연성을 바탕으로 강력한 솔루션 제공</li>
+                                    </ul>
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 충전 및 주차 로봇 -->
+                <div class="mb-20">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+                         <h3 class="text-3xl font-bold text-gray-800 mb-4 md:mb-0">충전 및 주차 로봇</h3>
+                         <p class="text-gray-600 max-w-xl md:text-right text-base break-keep">충전소 진입부터 케이블 연결까지, 주차로봇 및 충전로봇을 활용한 고속 충전 스테이션 플랫폼을 제공합니다.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- 주차 로봇 -->
+                        <div class="bg-white p-8 rounded-lg shadow-xl flex flex-col">
+                            <div>
+                                <h4 class="text-2xl font-bold mb-1">주차로봇</h4>
+                                <p class="text-gray-500 mb-6">라이다 센서를 활용한 자율주행 주차 로봇</p>
+                                <div class="h-48 flex items-center justify-center mb-6">
+                                    <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomy/autonomy-parkingrobot2.png" alt="주차로봇" class="max-h-full max-w-full">
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6 mt-auto pt-6 border-t">
+                                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomy/autonomy-parkingtest.png" alt="주차 테스트" class="w-1/3 rounded-lg flex-shrink-0">
+                                <p class="text-gray-700 text-sm break-keep">라이다 센서를 활용한 레벨 4 자율주행 기능으로 차량 주차 높이 90mm의 국내 최저 높이의 주차로봇</p>
+                            </div>
+                        </div>
+                        <!-- 충전 로봇 -->
+                        <div class="bg-white p-8 rounded-lg shadow-xl flex flex-col">
+                             <div>
+                                <h4 class="text-2xl font-bold mb-1">충전로봇</h4>
+                                <p class="text-gray-500 mb-6">비전 시스템을 활용한 전기차 충전 로봇</p>
+                                <div class="h-48 flex items-center justify-center mb-6">
+                                    <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomy/autonomy-chargingrobot.png" alt="충전로봇" class="max-h-full" style="max-width: 50%;">
+                                </div>
+                             </div>
+                             <div class="flex items-center gap-6 mt-auto pt-6 border-t">
+                                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomy/autonomy-chargingtest.png" alt="충전 테스트" class="w-1/3 rounded-lg flex-shrink-0">
+                                <p class="text-gray-700 text-sm break-keep">전기차 충전소에 진입한 차량을 Vision System으로 인식하여 충전구 위치를 판별하고 좌표를 산출한 뒤 충전 케이블을 연결하는 로봇</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Middleware & RCS -->
+                <div>
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-12">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4 md:mb-0">Middleware & RCS</h3>
+                         <p class="text-gray-600 max-w-xl md:text-right text-base break-keep">AI 기반 임베디드PC를 채용한 Middleware, RCS 제어기는 다수의 제품과 시스템을 통합 연결, 관제 기능을 탑재한 솔루션을 제공합니다.</p>
+                    </div>
+                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- Middleware -->
+                        <div class="bg-white p-8 rounded-lg shadow-xl">
+                            <h4 class="text-2xl font-bold mb-4">로봇 AI 통합 제어기 (Middleware)</h4>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomy/autonomy-middleware.png" alt="Middleware" class="w-full h-auto rounded-lg mb-6">
+                            <div class="grid grid-cols-2 gap-4 text-center mb-6">
+                                <div class="border rounded-lg p-3">
+                                    <h5 class="font-bold text-blue-700">Engine</h5>
+                                    <p class="text-sm">상태정의 기반의 FSM 구조</p>
+                                </div>
+                                <div class="border rounded-lg p-3">
+                                    <h5 class="font-bold text-blue-700">Task Module</h5>
+                                    <p class="text-sm">Json 기반의 원격 프로시저 호출 구조</p>
+                                </div>
+                            </div>
+                            <ul class="list-disc list-inside space-y-2 text-sm text-gray-700">
+                                <li>여러 장치를 하나의 제어기로 통합 제어 및 관리</li>
+                                <li>Engine과 Task Module을 분리하여 유연한 작업 가능</li>
+                                <li>검증된 하드웨어를 통한 안정적인 운용</li>
+                                <li>하위 시스템의 정보를 통합 정리하여 RCS등 상위 시스템 보고</li>
+                            </ul>
+                        </div>
+                        <!-- RCS -->
+                        <div class="bg-white p-8 rounded-lg shadow-xl">
+                             <h4 class="text-2xl font-bold mb-4">Robot Control System (RCS)</h4>
+                             <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomy/autonomy-rcs.png" alt="RCS" class="w-full h-auto rounded-lg mb-6">
+                             <div class="border rounded-lg p-3 text-center mb-6">
+                                <h5 class="font-bold text-blue-700">Engine System</h5>
+                                <p class="text-sm">상위 시스템에서 지령을 받아 하위 로봇을 지정, 통합, 관제 기능 수행</p>
+                            </div>
+                             <ul class="list-disc list-inside space-y-2 text-sm text-gray-700">
+                                <li>배터리, 위치 상태 작업 등 고려하여 자율 로봇 선정 수행</li>
+                                <li>다수의 로봇 및 Middleware의 정보를 통합 관리</li>
+                                <li>ACS + Other Robots 통합 관제 개념</li>
+                                <li>설비 작업 명령에 대하여 자율적 로봇 선정 시스템 동작</li>
+                            </ul>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Q Fit Page -->
+        <section id="qfit-page" class="page-content py-20 bg-blue-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-bold text-blue-600">Q Fit</h2>
+                    <p class="text-xl text-gray-500 mt-2">정밀 진단 기술의 새로운 기준</p>
+                </div>
+
+                <!-- 시약진단 -->
+                 <div class="mb-20">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-8">
+                        <div>
+                            <h3 class="text-3xl font-bold text-gray-800">시약진단</h3>
+                            <p class="text-lg text-gray-500">원스톱 시약진단 솔루션</p>
+                        </div>
+                        <p class="text-gray-600 max-w-xl md:text-right text-base break-keep mt-4 md:mt-0">
+                            분자진단 대중화를 위한 올인원 검사 솔루션 플랫폼으로<br>
+                            AI 기반 분석을 통해 심층적 데이터 해석과 맞춤형 진단을 제공합니다.
+                        </p>
+                    </div>
+
+                    <!-- [MODIFIED] New Integrated Image -->
+                    <div class="bg-white p-8 rounded-lg shadow-xl mb-12">
+                        <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/q-fit/qfit-total1.png" alt="시약진단 원스톱 솔루션" class="w-full h-auto mx-auto">
+                    </div>
+
+
+                    <!-- [KEPT] Bottom Details -->
+                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-6">
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                            <h5 class="font-bold text-xl text-blue-700 mb-4">Heat Sealer</h5>
+                             <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/q-fit/qfit-heatsealer2.png" class="h-40 mx-auto mb-4 object-contain">
+                            <p class="text-sm text-gray-600">신개념 시약 진단 자동화 시스템에 최적화된 기밀장치 고온실링을 통해 저온실링의 한계를 극복, 완전 기밀성</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                            <h5 class="font-bold text-xl text-blue-700 mb-4">Real-Time PCR</h5>
+                            <div class="flex justify-center items-center gap-4 mb-4">
+                                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/q-fit/qfit-realtime1.png" class="h-40 object-contain">
+                                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/q-fit/qfit-pcrgraph.png" class="h-24 object-contain border rounded">
+                            </div>
+                            <p class="text-sm text-gray-600">고감도의 광학 시스템과 정밀 온도 제어를 통한 높은 신뢰성 다양한 샘플 형식과 화학에 호환 가능, 다중검출로 다중 실험 지원</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                            <h5 class="font-bold text-xl text-blue-700 mb-4">AI 기반 분석 시스템</h5>
+                            <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/q-fit/qfit-aisystem.png" class="h-40 mx-auto mb-4 object-contain border rounded">
+                            <p class="text-sm text-gray-600">Real-Time PCR 검사를 통한 다수 타겟 유전자 정량 정보 제공 AI 기반 데이터 분석기술 적용, 다수 병원체를 동시 검사 수행</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- [MODIFIED] PCR Plate Heat Sealer Section -->
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4 text-center">PCR Plate Heat Sealer</h3>
+                    <p class="text-gray-600 mb-12 max-w-4xl mx-auto text-center">
+                        삼익THK의 Heat Sealer Series는 고온실링 공정의 완전 자동화로<br>
+                        균일한 씰링 품질과 탁월한 생산 신뢰성을 구현합니다.
+                    </p>
+                    
+                    <!-- New 3-column layout from PPT slide 2 -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                        
+                        <!-- 1. Sheet Film Full Auto System -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+                            <h4 class="text-xl font-bold text-center bg-gray-700 text-white py-2 px-4 rounded-md mb-4">Sheet Film Heat Sealer</h4>
+                            <div class="flex justify-between items-baseline mb-4">
+                                <span class="font-bold text-lg text-green-700">Sheet Film Full Auto System</span>
+                                <span class="text-sm text-gray-500">모델명: QF-SHS-FA01</span>
+                            </div>
+                            <!-- Image with labels - using relative positioning -->
+                            <div class="relative min-h-[350px]">
+                                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/q-fit/qfit-sheetfilm.png" alt="Sheet Film Full Auto System" class="w-full h-auto object-contain">
+                                
+                                <!-- Labels from PPT -->
+                                
+                            </div>
+                        </div>
+
+                        <!-- 2. Roll Film Full Auto System -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+                            <h4 class="text-xl font-bold text-center bg-gray-700 text-white py-2 px-4 rounded-md mb-4">Roll Film Heat Sealer</h4>
+                            <div class="flex justify-between items-baseline mb-4">
+                                <span class="font-bold text-lg text-green-700">Roll Film Full Auto System</span>
+                                <span class="text-sm text-gray-500">모델명: QF-SHS-SA01</span>
+                            </div>
+                            <!-- Image with labels -->
+                            <div class="relative min-h-[350px]">
+                                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/q-fit/qfit-rollfilmheatsealer.png" alt="Roll Film Full Auto System" class="w-full h-auto object-contain">
+                                
+                                <!-- Labels from PPT -->
+                                
+                            </div>
+                        </div>
+
+                        <!-- 3. Heat Sealer (Semi Auto) -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg h-full">
+                            <h4 class="text-xl font-bold text-center bg-gray-700 text-white py-2 px-4 rounded-md mb-4">Heat Sealer (Semi Auto)</h4>
+                            <div class="flex justify-between items-baseline mb-4">
+                                <span class="font-bold text-lg text-green-700">Sheet Film Semi Auto System</span>
+                                <span class="text-sm text-gray-500">모델명: QF-RHS-SA01</span>
+                            </div>
+                            <!-- Image with labels -->
+                            <div class="relative min-h-[350px]">
+                                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/q-fit/qfit-heatsealersemiauto.png" alt="Heat Sealer (Semi Auto)" class="w-full h-auto object-contain">
+                                
+                                <!-- Labels from PPT -->
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SYSTEM Page -->
+        <section id="system-page" class="page-content py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                 <h2 class="text-4xl font-bold text-indigo-900 text-center mb-4">SYSTEM</h2>
+                 <p class="text-xl text-center text-gray-600 mb-12">미래를 구축하는 통합 시스템</p>
+                 <div class="bg-white rounded-lg shadow-xl p-8 text-center min-h-[300px] flex items-center justify-center">
+                    <p class="text-2xl text-gray-500">시스템 부문은 현재 준비 중입니다. <br>더욱 혁신적인 솔루션으로 찾아뵙겠습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Autonomous Vision Page -->
+        <section id="autonomous-page" class="page-content py-10 bg-white">
+             <div class="container mx-auto px-6">
+                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomous/autonomous-illust1.png" alt="Autonomous Action Plan" class="w-full h-auto rounded-lg shadow-md mb-8">
+                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/autonomous/autonomous-illust.png" alt="Autonomous Solution Diagram" class="w-full h-auto rounded-lg shadow-md">
+            </div>
+        </section>
+    </main>
+
+    <!-- WTR-S Spec Modal -->
+    <div id="wtr-s-modal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 hidden z-[100]">
+        <div class="bg-white rounded-xl shadow-2xl p-4 md:p-6 relative max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+            <button id="close-wtr-s-modal" class="absolute top-2 right-2 text-gray-400 hover:text-gray-800 transition-colors z-10">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div class="space-y-4">
+                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/spec/wtr/robotics-s-wtr-robot-specifications.png" alt="WTR-S Specifications" class="w-full h-auto rounded-lg border">
+                <img src="https://kbgbfglyxlsfhsrmojvd.supabase.co/storage/v1/object/public/Samick-Solution-images/spec/wtr/robotics-s-wtr-robot-layout.png" alt="WTR-S Layout" class="w-full h-auto rounded-lg border">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 SAMICK THK. All Rights Reserved.</p>
+            <p>Providing Innovative Products To The World And Generating New Trends To Contribute To The Creation Of an Affluent Society</p>
+        </div>
+    </footer>
+
+    <script>
+        function showPage() {
+            // Default page is 'home-page'
+            const pageId = window.location.hash ? window.location.hash.substring(1) : 'home-page';
+            const pages = document.querySelectorAll('.page-content');
+            let pageFound = false;
+
+            pages.forEach(page => {
+                if (page.id === pageId) {
+                    page.style.display = 'block';
+                    pageFound = true;
+                } else {
+                    page.style.display = 'none';
+                }
+            });
+
+            // If no valid page was found in the hash, show the home page
+            if (!pageFound) {
+                const homePage = document.getElementById('home-page');
+                if (homePage) {
+                    homePage.style.display = 'block';
+                }
+            }
+            // Scroll to top when page changes
+            window.scrollTo(0, 0);
+        }
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Listen for hash changes (clicking a link, back/forward buttons)
+        window.addEventListener('hashchange', showPage);
+        // Show initial page on load
+        document.addEventListener('DOMContentLoaded', () => {
+            showPage();
+
+            // WTR-S Modal Logic
+            const wtrSModal = document.getElementById('wtr-s-modal');
+            if (wtrSModal) {
+                const openWtrSModalBtn = document.getElementById('open-wtr-s-modal');
+                const closeWtrSModalBtn = document.getElementById('close-wtr-s-modal');
+
+                if (openWtrSModalBtn && closeWtrSModalBtn) {
+                    openWtrSModalBtn.addEventListener('click', () => {
+                        wtrSModal.classList.remove('hidden');
+                        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                    });
+
+                    const closeModal = () => {
+                        wtrSModal.classList.add('hidden');
+                        document.body.style.overflow = ''; // Restore background scrolling
+                    };
+
+                    closeWtrSModalBtn.addEventListener('click', closeModal);
+
+                    wtrSModal.addEventListener('click', (event) => {
+                        // Check if the click is on the backdrop itself
+                        if (event.target === wtrSModal) {
+                            closeModal();
+                        }
+                    });
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
+
